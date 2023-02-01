@@ -25,7 +25,6 @@ function Home() {
     authorizeUrl: baseOAuthURL,
     clientId: process.env.BUNGIE_CLIENT_ID || '33017',
     redirectUri: `${document.location.origin}/callback`,
-    scope: 'ReadBasicUserProfile,MoveEquipDestinyItems,ReadDestinyInventoryAndVault,ReadUserData',
     responseType: 'code',
     exchangeCodeForTokenServerURL: tokenEndpoint,
     exchangeCodeForTokenMethod: 'POST',
